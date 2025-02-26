@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# source the management script
+. "$SNAP/bin/scripts/management-script"
+
+DBMS_ADRESS="$(dbms_adress)"
+DBMS_PORT="$(dbms_port)"
+DBMS_DBNAME="$(dbms_dbname)"
+DBMS_USER="$(dbms_user)"
+DBMS_PASSWORD="$(dbms_password)"
+
+"$SNAP/bin/scale-terminal-reactor" -a "$DBMS_ADRESS" -p "$DBMS_PORT" -d "$DBMS_DBNAME" -u "$DBMS_USER" -pas "$DBMS_PASSWORD"
