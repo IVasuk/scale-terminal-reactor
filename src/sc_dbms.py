@@ -480,6 +480,7 @@ class BaseModel(Model):
     class Meta:
         database = PSQL_DB
         legacy_table_names = False
+        only_save_dirty = True
 
 
 class ScScales(BaseModel):
