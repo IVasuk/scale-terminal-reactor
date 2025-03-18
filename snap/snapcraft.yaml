@@ -1,5 +1,5 @@
 name: scale-terminal-reactor  # you probably want to 'snapcraft register <name>'
-version: '1.0.1' # just for humans, typically '1.2+git' or '1.3.2'
+version: '1.2.0' # just for humans, typically '1.2+git' or '1.3.2'
 summary: IoT example using GTK3 # 79 char long summary
 description: IoT ecore22 error version `GLIBC_2.38' not foundxample using GTK3
 confinement: strict

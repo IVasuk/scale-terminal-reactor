@@ -26,6 +26,17 @@ def sc_is_closed(db = PSQL_DB):
     return db.is_closed()
 
 
+def sc_current_timestamp(db = PSQL_DB):
+    time_stamp = None
+
+    try:
+        for ts in sc_execute("SELECT current_timestamp;",db):
+            time_stamp = ts[0]
+    except:
+        pass
+
+    return time_stamp
+
 def sc_get_scaledb_id(db = PSQL_DB):
     scaledb_id = ''
 
