@@ -141,6 +141,8 @@ def update_statusbar(label_time):
                         connection_closed = True
 
                         GLib.idle_add(update_status_box, '#FF0000')
+
+                    break
                 else:
                     if connection_closed:
                         connection_closed = False
